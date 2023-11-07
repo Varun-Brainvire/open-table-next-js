@@ -1,0 +1,38 @@
+{
+  "data": [
+    {
+      "name": "Vivaan - fine Indian",
+      "main_image": "https://resizer.otstatic.com/v2/photos/wide-huge/1/32109459.jpg",
+      "price": "REGULAR",
+      "description": "Vivaan is Modern Indian Cuisine serving dishes from different regions of India. We carefully select our ingredients and use them to make authentic Indian recipes and our chef puts his modern flair and twists to the dishes.",
+      "images": [
+        "https://resizer.otstatic.com/v2/photos/xlarge/2/32109461.jpg",
+        "https://resizer.otstatic.com/v2/photos/xlarge/1/32459786.jpg",
+        "https://resizer.otstatic.com/v2/photos/xlarge/1/32484701.jpg",
+        "https://resizer.otstatic.com/v2/photos/xlarge/1/32484708.jpg"
+      ],
+      "open_time": "14:30:00.000Z",
+      "close_time": "21:30:00.000Z",
+      "slug": "vivaan-fine-indian-cuisine-ottawa",
+      "location_id": 1,
+      "cuisine_id": 1
+    },
+    {
+      "name": "RamaKrishna Indian",
+      "main_image": "https://resizer.otstatic.com/v2/photos/wide-huge/2/47417441.jpg",
+      "price": "CHEAP",
+      "description": "With 20 years of experience cooking in the finest restaurants, our chef is excited to present their vision to you and all our guests. Our caring and committed staff will ensure you have a fantastic experience with us.",
+      "images": [
+        "https://resizer.otstatic.com/v2/photos/xlarge/2/47417455.png",
+        "https://resizer.otstatic.com/v2/photos/xlarge/1/47417456.jpg",
+        "https://resizer.otstatic.com/v2/photos/xlarge/2/47417457.jpg",
+        "https://resizer.otstatic.com/v2/photos/xlarge/1/47417458.jpg"
+      ],
+      "open_time": "12:30:00.000Z",
+      "close_time": "22:00:00.000Z",
+      "slug": "ramakrishna-indian-restaurant-ottawa",
+      "location_id": 1,
+      "cuisine_id": 2
+    }
+  ]
+}
