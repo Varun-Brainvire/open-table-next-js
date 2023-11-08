@@ -4,8 +4,16 @@ import NavBar from "../components/NavBar";
 import SearchHeader from "./components/SearchHeader";
 import SideBar from "./components/SideBar";
 import RestaurantCard from "./components/RestaurantCard";
+import supabase from '../supabaseClient'
 
-const Searchpage = () => {
+const Searchpage = async ({searchParams}:any) => {
+  console.log(searchParams.city,"Props inside search")
+
+  const fetchData: any = await supabase
+    .from("restaurants")
+    .select(`* , cuisine(*), location(*)`)
+    .eq("city", `${searchParams.city}`);
+    console.log(fetchData)
   return (
     <div>
       <main className="bg-gray-100 min-h-screen w-screen">

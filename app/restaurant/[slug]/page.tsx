@@ -9,8 +9,16 @@ import Images from "../components/Images";
 import Reviews from "../components/Reviews";
 import ReservationCard from "../components/ReservationCard";
 import NavBar from "../../components/NavBar";
+import supabase from '../../supabaseClient'
 
-const RestaurantDetails = () => {
+const RestaurantDetails = async (slug:any) => {
+
+  const fetchData: any = await supabase
+    .from("restaurants")
+    .select(`* , cuisine(*), location(*)`)
+    .eq("slug", `${slug.params.slug}`);
+
+    console.log(fetchData.data,"fetchData.data");
   return (
     <main className="bg-gray-100 min-h-screen w-screen">
       <main className="max-w-screen-2xl m-auto bg-white">
@@ -22,10 +30,10 @@ const RestaurantDetails = () => {
         <div className="flex m-auto w-2/3 justify-between items-start 0 -mt-11">
           <div className="bg-white w-[70%] rounded p-3 shadow">
             <RestaurantNavBar />
-            <Title />
-            <Ratings />
-            <Description />
-            <Images />
+            <Title title={fetchData.data[0].name}/>
+            <Ratings  />
+            <Description desc={fetchData.data[0].description}/>
+            <Images images={fetchData.data[0].images} />
             <Reviews />
           </div>
           <div className="w-[27%] relative text-reg">
