@@ -1,15 +1,9 @@
 import Link from 'next/link'
 import React from 'react'
-import supabase from '../supabaseClient'
 
 const Card = async(props:any) => {
 
   console.log(props.response,"props.response")
-
-  const fetchData: any = await supabase
-    .from("restaurants")
-    .select(`* , cuisine(*), location(*)`)
-    .eq("slug", `${props.response.slug}`);
 
   return (
     <div className="w-64 h-72 m-3 rounded overflow-hidden border cursor-pointer">
