@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Images = ({images} :{images:string[]}) => {
-  console.log(images,"images")
+  // console.log(images,"images")
   return (
     <div>
               <h1 className="font-bold text-3xl mt-10 mb-7 border-b pb-5">

@@ -3,7 +3,7 @@ import React from 'react'
 
 const Card = async(props:any) => {
 
-  console.log(props.response,"props.response")
+  // console.log(props.response,"props.response")
 
   return (
     <div className="w-64 h-72 m-3 rounded overflow-hidden border cursor-pointer">

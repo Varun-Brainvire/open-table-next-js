@@ -18,7 +18,7 @@ const RestaurantDetails = async (slug:any) => {
     .select(`* , cuisine(*), location(*)`)
     .eq("slug", `${slug.params.slug}`);
 
-    console.log(fetchData.data,"fetchData.data");
+    // console.log(fetchData.data,"fetchData.data");
   return (
     <main className="bg-gray-100 min-h-screen w-screen">
       <main className="max-w-screen-2xl m-auto bg-white">

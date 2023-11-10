@@ -4,7 +4,7 @@ const SideBar = (props: any) => {
 
   
 
-  console.log(props.cuisine.data, "In search bar");
+  // console.log(props.cuisine.data, "In search bar");
   return (
     <div className="w-1/5">
       <div className="border-b pb-4">
@@ -17,7 +17,7 @@ const SideBar = (props: any) => {
       <div className="border-b pb-4 mt-3">
         <h1 className="mb-2">Cuisine</h1>
         {props.cuisine.data.map((name: string) => {
-          console.log(name, "name in loop");
+          // console.log(name, "name in loop");
           return <p className="font-light text-reg">{name.name}</p>;
         })}
       </div>

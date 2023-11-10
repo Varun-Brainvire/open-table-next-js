@@ -42,12 +42,12 @@ const Searchpage = async ({searchParams}:any) => {
     const location:any = await supabase
     .from("location")
     .select("name")
-    console.log(location.data,"location")
+    // console.log(location.data,"location")
 
     const cuisine:any = await supabase
     .from("cuisine")
     .select("name")
-    console.log(cuisine.data,"cuisine")
+    // console.log(cuisine.data,"cuisine")
 
     // console.log(fetchData.data,"Fetch Data in search")
 

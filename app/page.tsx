@@ -22,7 +22,7 @@ export default async function Home() {
   .from('restaurants')
   .select()
   const response:any = data.data
-  console.log(data)
+  // console.log(data)
 
 
   return (
